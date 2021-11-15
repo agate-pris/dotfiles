@@ -1,0 +1,6 @@
+*.lnk
+.DS_Store
+.directory
+.localized
+Thumbs.db
+desktop.ini
