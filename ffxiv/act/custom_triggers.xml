@@ -1,0 +1,9 @@
+<CustomTriggers>
+    <Trigger Active="False" Regex="(Hildegard Pris|H\. P\.)は.(.+)の製作を開始した" SoundData="$2の製作を開始した" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
+    <Trigger Active="False" Regex="(Hildegard Pris|H\. P\.)は.([^\uE03C]+)\uE03C?(.*)を完成させた" SoundData="$2$3を完成させた" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
+    <Trigger Active="True" Regex="\uE0BB([^\uE03C]+)\uE03C?の耐久度が0%になった" SoundData="$1の耐久度が0%になった" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
+    <Trigger Active="True" Regex="\uE0BB([^\uE03C]+)\uE03C?の耐久度が10%以下になった" SoundData="$1の耐久度が10%以下になった" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
+    <Trigger Active="True" Regex="\uE0BB([^\uE03C]+)\uE03C?の錬精度が100%になった" SoundData="$1の錬精度が100%になった" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
+    <Trigger Active="True" Regex="あなたの雇用している(.+)が、冒険を終えました" SoundData="$1が、冒険を終えました" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
+    <Trigger Active="True" Regex="素材が足りないため、製作が行えません" SoundData="素材が足りないため、製作が行えません" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
+</CustomTriggers>
