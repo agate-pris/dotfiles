@@ -1,0 +1,9 @@
+*.md text eol=lf
+*.sh text eol=lf
+*.txt text eol=lf
+*.userstyles text eol=lf
+.bash_aliases text eol=lf
+.bash_profile text eol=lf
+.bashrc text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
