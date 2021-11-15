@@ -1,0 +1,12 @@
+/hotbar action ヴェネレーション 3 1
+/hotbar action インナークワイエット 3 2
+/hotbar action イノベーション 3 3
+/hotbar action グレートストライド 3 4
+/hotbar action マスターズメンド 3 5
+/hotbar action マニピュレーション 3 6
+/hotbar action 秘訣 3 7
+/hotbar action 経過観察 3 8
+/hotbar action 倹約 3 9
+/hotbar action 長期倹約 3 10
+/hotbar action 設計変更 3 11
+/hotbar action 最終確認 3 12
