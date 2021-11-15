@@ -1,0 +1,9 @@
+/ac 真価 <wait.3>
+/ac 下地加工 <wait.3>
+/ac イノベーション <wait.2>
+/ac ヴェネレーション <wait.2>
+/ac 精密作業 <wait.3>
+/ac 精密作業 <wait.3>
+/ac ビエルゴの祝福 <wait.3>
+/ac 下地作業
+/echo 完成！ <se.8>
