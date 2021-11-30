@@ -77,3 +77,12 @@
 - [GitCredentialManager/git-credential-manager: Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services.](https://github.com/GitCredentialManager/git-credential-manager)
 
 `url.<base>.insteadOf` （及び `url.<base>.pushInsteadOf` の設定例は `gitconfig.sh` を参照。
+
+## Unity
+
+- [Download - Unity](https://unity3d.com/jp/get-unity/download)
+- [Chocolatey Software | Unity Hub (install)](https://community.chocolatey.org/packages/unity-hub)
+
+```install-unity-hub-with-choco.ps1
+choco install unity-hub
+```
