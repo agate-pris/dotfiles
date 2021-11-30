@@ -27,6 +27,15 @@
 - [ ] `.bashrc`
 - [ ] `.gitattributes`
 
+## お役立ちリンク
+
+- [Usage message - Wikipedia](https://en.wikipedia.org/wiki/Usage_message)
+    - [Examples](https://en.wikipedia.org/wiki/Usage_message#Examples)
+- [Command-line interface - Wikipedia](https://en.wikipedia.org/wiki/Command-line_interface)
+    - [Command description syntax](https://en.wikipedia.org/wiki/Command-line_interface#Command_description_syntax)
+- [Command shell overview: Scripting; Management Services | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc737438(v=ws.10)?redirectedfrom=MSDN)
+- [Command-Line Syntax Key | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc771080(v=ws.11)?redirectedfrom=MSDN)
+
 ## Git
 
 - [Git](https://git-scm.com/)
