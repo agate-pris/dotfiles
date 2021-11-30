@@ -37,5 +37,7 @@
                     - [`committer.name`](https://git-scm.com/docs/git-config#Documentation/git-config.txt-committername)
                     - [`committer.email`](https://git-scm.com/docs/git-config#Documentation/git-config.txt-committeremail)
                     - [`user.useConfigOnly`](https://git-scm.com/docs/git-config#Documentation/git-config.txt-useruseConfigOnly)
+- [Git に GitHub の認証情報をキャッシュする - GitHub Docs](https://docs.github.com/ja/get-started/getting-started-with-git/caching-your-github-credentials-in-git)
+- [GitCredentialManager/git-credential-manager: Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services.](https://github.com/GitCredentialManager/git-credential-manager)
 
 `url.<base>.insteadOf` （及び `url.<base>.pushInsteadOf` の設定例は `gitconfig.sh` を参照。
