@@ -1,0 +1,15 @@
+/ac 真価 <wait.3>
+/ac マニピュレーション <wait.2>
+/ac 長期倹約 <wait.2>
+/ac 加工 <wait.3>
+/ac 中級加工 <wait.3>
+/ac 中級加工 <wait.3>
+/ac イノベーション <wait.2>
+/ac 加工 <wait.3>
+/ac 下地加工 <wait.3>
+/ac グレートストライド <wait.2>
+/ac ビエルゴの祝福 <wait.3>
+/ac ヴェネレーション <wait.2>
+/ac 下地作業 <wait.3>
+/ac 模範作業 <wait.3>
+/echo 完成！ <se.8> 
