@@ -1,14 +1,10 @@
 name: CI
 on:
-  push:
   workflow_dispatch:
 jobs:
   build:
     runs-on: windows-latest
     steps:
-      - name: foo
-        run: |
-          Get-ExecutionPolicy -List
-          echo foo
-          iwr -useb raw.githubusercontent.com/agate-pris/dotfiles/hello/.bin/bootstrap.ps1 | iex
+      - name: bootstrap
+        run: iwr -useb raw.githubusercontent.com/agate-pris/dotfiles/hello/.bin/bootstrap.ps1 | iex
         shell: powershell
