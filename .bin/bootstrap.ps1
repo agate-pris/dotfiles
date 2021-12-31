@@ -23,6 +23,15 @@ $apps = @(
 )
 # sudo scoop install $apps --global
 
+# Add buckets
+scoop bucket add extras
+
+# Install browser
+$apps = @(
+    googlechrome
+)
+sudo scoop install $apps --global
+
 # Install apps from main
 # hugo-extended
 # go
