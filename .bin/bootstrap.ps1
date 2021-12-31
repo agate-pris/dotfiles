@@ -15,3 +15,18 @@ $apps = @(
     "dark"
 )
 sudo scoop install $apps --global
+
+# Install apps from main
+$apps = @(
+    "git"
+    "git-lfs"
+)
+# sudo scoop install $apps --global
+
+# Install apps from main
+# hugo-extended
+# go
+# python
+# ruby
+# rustup
+# ffmpeg
