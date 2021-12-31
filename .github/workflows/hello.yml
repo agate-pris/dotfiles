@@ -6,10 +6,8 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-      - name: Get execution policy
-        run: Get-ExecutionPolicy -List
-        shell: powershell
-    steps:
-      - name: dir
-        run: dir
+      - name: foo
+        run: |
+          Get-ExecutionPolicy -List
+          dir
         shell: powershell
