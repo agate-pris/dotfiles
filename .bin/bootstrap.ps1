@@ -1,9 +1,17 @@
+# Set execution policy
 Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope Process
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+# Download script and install Scoop using it
 iwr -useb get.scoop.sh | iex
-scoop help
-scoop help install
-# scoop install sudo
-# echo quux
-# sudo scoop install 7zip git openssh --global
-# echo quuux
+
+# Add sudo
+scoop install sudo
+
+# Install apps recommended by the subcommand checkup
+$apps = @(
+    "7zip"
+    "innounp"
+    "dark"
+)
+sudo scoop install $apps --global
