@@ -16,20 +16,37 @@ $apps = @(
 )
 sudo scoop install $apps --global
 
-# Install apps from main
+# Install git
 $apps = @(
     "git"
     "git-lfs"
 )
-# sudo scoop install $apps --global
+sudo scoop install $apps --global
 
 # Add buckets
 scoop bucket add extras
 scoop bucket add versions
 
-# Install browser
+# Install browser, editor, and password manager
+# Google ChromeとVisual Studio CodeはChocolateyからインストールしてピン、自動更新に任せたほうがいいかも。
 $apps = @(
-    googlechrome
+    "bitwarden"
+    # "googlechrome"
+    # "vscode"
+)
+sudo scoop install $apps --global
+
+# Install apps
+$apps = @(
+    "discord"
+    "discord-canary"
+    "discord-ptb"
+    "everything"
+    "ffmpeg"
+    "libreoffice-stable"
+    "obs-studio"
+    "paint.net"
+    "vlc"
 )
 sudo scoop install $apps --global
 
@@ -39,15 +56,21 @@ sudo scoop install $apps --global
 # python
 # ruby
 # rustup
-# ffmpeg
-# libreoffice-stable
-# obs-studio
-# paint.net
-# discord
-# everything
-# vlc
 
 # # todo
+# see https://hackmd.io/@Eai/Win10-reinstall
+# - [ ] unity hub
+# - [ ] visual studio
+# - [ ] imageglass
 # - [ ] steam
 # - [ ] synctrayzor
 # - [ ] dropbox
+# - [ ] vscode extensions
+# - [ ] cryptmator
+# - [ ] cyberduck
+# - [ ] userstyles
+# - [ ] powertoys
+# - [ ] google-japanese-input-np
+# - [ ] fonts
+#   - [ ] noto
+#   - [ ] inconsolata
