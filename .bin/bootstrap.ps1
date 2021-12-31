@@ -5,7 +5,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 # Download script and install Scoop using it
 iwr -useb get.scoop.sh | iex
 
-# Add sudo
+# Install sudo at first
 scoop install sudo
 
 # Install apps recommended by the subcommand checkup
