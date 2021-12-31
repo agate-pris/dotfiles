@@ -9,3 +9,7 @@ jobs:
       - name: Get execution policy
         run: Get-ExecutionPolicy -List
         shell: powershell
+    steps:
+      - name: dir
+        run: dir
+        shell: powershell
