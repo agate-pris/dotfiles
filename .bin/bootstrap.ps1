@@ -39,3 +39,14 @@ sudo scoop install $apps --global
 # ruby
 # rustup
 # ffmpeg
+# libreoffice-stable
+# obs-studio
+# paint.net
+# discord
+# everything
+# vlc
+
+# # todo
+# - [ ] steam
+# - [ ] synctrayzor
+# - [ ] dropbox
