@@ -9,5 +9,5 @@ jobs:
       - name: foo
         run: |
           Get-ExecutionPolicy -List
-          dir
+          iwr -useb raw.githubusercontent.com/agate-pris/dotfiles/hello/.bin/bootstrap.ps1 | iex
         shell: powershell
