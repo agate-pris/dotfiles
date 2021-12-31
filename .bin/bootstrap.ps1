@@ -25,6 +25,7 @@ $apps = @(
 
 # Add buckets
 scoop bucket add extras
+scoop bucket add versions
 
 # Install browser
 $apps = @(
