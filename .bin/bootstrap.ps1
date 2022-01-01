@@ -1,8 +1,10 @@
-winget install --id Bitwarden.Bitwarden
-winget install --id Google.Chrome
-winget install --id Microsoft.VisualStudioCode
-
 winget install --id 7zip.7zip
+winget install --id Bitwarden.Bitwarden
+winget install --id Git.Git
+winget install --id GitHub.GitLFS
+winget install --id Google.Chrome
+winget install --id Google.JapaneseIME
+winget install --id Microsoft.VisualStudioCode
 
 winget install --id Microsoft.PowerToys
 winget install --id Valve.Steam
@@ -28,13 +30,6 @@ scoop install sudo
 $apps = @(
     "innounp"
     "dark"
-)
-scoop install $apps
-
-# Install git
-$apps = @(
-    "git"
-    "git-lfs"
 )
 scoop install $apps
 
@@ -69,11 +64,9 @@ scoop install $apps
 # - [ ] synctrayzor
 # - [ ] dropbox
 # - [ ] vscode extensions
-# - [ ] cryptmator
 # - [ ] cyberduck
 # - [ ] userstyles
 # - [ ] powertoys
-# - [ ] google-japanese-input-np
 # - [ ] fonts
 #   - [ ] noto
 #   - [ ] inconsolata
