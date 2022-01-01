@@ -77,3 +77,10 @@
 - [GitCredentialManager/git-credential-manager: Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services.](https://github.com/GitCredentialManager/git-credential-manager)
 
 `url.<base>.insteadOf` （及び `url.<base>.pushInsteadOf` の設定例は `gitconfig.sh` を参照。
+
+## bootstrap.ps1
+
+```
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
+iwr raw.githubusercontent.com/agate-pris/dotfiles/.bin/bootstrap.ps1 | iex
+```
