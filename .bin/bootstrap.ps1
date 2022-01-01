@@ -2,6 +2,10 @@
 Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope Process
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
+# Install Chocolatey and Boxstarter
+# wip: See https://boxstarter.org/InstallBoxstarter
+# and https://chocolatey.org/install
+
 # Download script and install Scoop using it
 iwr -useb get.scoop.sh | iex
 
@@ -14,27 +18,27 @@ $apps = @(
     "innounp"
     "dark"
 )
-sudo scoop install $apps --global
+scoop install $apps
 
 # Install git
 $apps = @(
     "git"
     "git-lfs"
 )
-sudo scoop install $apps --global
+scoop install $apps
 
 # Add buckets
 scoop bucket add extras
 scoop bucket add versions
 
 # Install browser, editor, and password manager
-# Google ChromeとVisual Studio CodeはChocolateyからインストールしてピン、自動更新に任せたほうがいいかも。
+# 自動更新周りが不安だが、ローカルインストールする分には問題ないだろうという判断。
 $apps = @(
     "bitwarden"
-    # "googlechrome"
-    # "vscode"
+    "googlechrome"
+    "vscode"
 )
-sudo scoop install $apps --global
+scoop install $apps
 
 # Install apps
 $apps = @(
@@ -48,7 +52,7 @@ $apps = @(
     "paint.net"
     "vlc"
 )
-sudo scoop install $apps --global
+scoop install $apps
 
 # Install apps from main
 # hugo-extended
