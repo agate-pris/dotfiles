@@ -1,20 +1,26 @@
-winget install --id 7zip.7zip
-winget install --id Bitwarden.Bitwarden
-winget install --id Git.Git
-winget install --id GitHub.GitLFS
-winget install --id Google.Chrome
-winget install --id Google.JapaneseIME
-winget install --id Microsoft.VisualStudioCode
-
-winget install --id Microsoft.PowerToys
-winget install --id Valve.Steam
-
-winget install --id Microsoft.VisualStudio
-winget install --id UnityTechnologies.UnityHub
-
-# Set execution policy
 Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope Process
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+winget install -e --id 7zip.7zip
+winget install -e --id Bitwarden.Bitwarden
+winget install -e --id Git.Git
+winget install -e --id GitHub.GitLFS
+winget install -e --id Google.Chrome
+winget install -e --id Google.JapaneseIME
+winget install -e --id Microsoft.VisualStudioCode
+winget install -e --id Nvidia.GeForceExperience
+
+# winget install -e --id Dropbox.Dropbox
+winget install -e --id Iterate.Cyberduck
+winget install -e --id LibreOffice.LibreOffice
+winget install -e --id Microsoft.PowerToys
+winget install -e --id OBSProject.OBSStudio
+# winget intall -e --id SyncTrayzor.SyncTrayzor
+winget install -e --id Valve.Steam
+winget install -e --id voidtools.Everything
+
+winget install -e --id Microsoft.VisualStudio
+winget install -e --id UnityTechnologies.UnityHub
 
 # Install Chocolatey and Boxstarter
 # wip: See https://boxstarter.org/InstallBoxstarter
@@ -41,10 +47,8 @@ scoop bucket add versions
 $apps = @(
     "discord-canary"
     "discord-ptb"
-    "everything"
     "ffmpeg"
-    "libreoffice-stable"
-    "obs-studio"
+    "imageglass"
     "paint.net"
     "vlc"
 )
@@ -59,11 +63,7 @@ scoop install $apps
 
 # # todo
 # see https://hackmd.io/@Eai/Win10-reinstall
-# - [ ] imageglass
-# - [ ] synctrayzor
-# - [ ] dropbox
 # - [ ] vscode extensions
-# - [ ] cyberduck
 # - [ ] userstyles
 # - [ ] fonts
 #   - [ ] noto
