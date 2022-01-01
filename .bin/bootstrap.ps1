@@ -1,3 +1,15 @@
+winget install --id Bitwarden.Bitwarden
+winget install --id Google.Chrome
+winget install --id Microsoft.VisualStudioCode
+
+winget install --id 7zip.7zip
+
+winget install --id Microsoft.PowerToys
+winget install --id Valve.Steam
+
+winget install --id Microsoft.VisualStudio
+winget install --id UnityTechnologies.UnityHub
+
 # Set execution policy
 Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope Process
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
@@ -14,7 +26,6 @@ scoop install sudo
 
 # Install apps recommended by the subcommand checkup
 $apps = @(
-    "7zip"
     "innounp"
     "dark"
 )
@@ -30,15 +41,6 @@ scoop install $apps
 # Add buckets
 scoop bucket add extras
 scoop bucket add versions
-
-# Install browser, editor, and password manager
-# 自動更新周りが不安だが、ローカルインストールする分には問題ないだろうという判断。
-$apps = @(
-    "bitwarden"
-    "googlechrome"
-    "vscode"
-)
-scoop install $apps
 
 # Install apps
 $apps = @(
@@ -63,10 +65,7 @@ scoop install $apps
 
 # # todo
 # see https://hackmd.io/@Eai/Win10-reinstall
-# - [ ] unity hub
-# - [ ] visual studio
 # - [ ] imageglass
-# - [ ] steam
 # - [ ] synctrayzor
 # - [ ] dropbox
 # - [ ] vscode extensions
