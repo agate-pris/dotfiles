@@ -39,7 +39,6 @@ scoop bucket add versions
 
 # Install apps
 $apps = @(
-    "discord"
     "discord-canary"
     "discord-ptb"
     "everything"
@@ -66,7 +65,6 @@ scoop install $apps
 # - [ ] vscode extensions
 # - [ ] cyberduck
 # - [ ] userstyles
-# - [ ] powertoys
 # - [ ] fonts
 #   - [ ] noto
 #   - [ ] inconsolata
