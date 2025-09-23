@@ -1,32 +1,5 @@
 # dotfiles
 
-## ToDo
-
-- [ ] Ubuntu
-- [ ] Windows
-    - [ ] Chocolatey
-    - [ ] MSYS2
-    - [ ] Ruby
-    - [ ] Python
-    - [ ] Rust
-    - [ ] Unity
-    - [ ] Fonts
-        - [ ] AAHub Font
-        - [ ] IBM Plex
-        - [ ] Noto
-    - [ ] Syncthing
-        - [ ] `.stignore`
-- [ ] WSL
-- [ ] Git
-    - [x] Summary
-    - [ ] Git Credential Manager Core
-- [x] Final Fantasy XIV
-- [ ] userstyles
-- [ ] `.bash_aliases`
-- [ ] `.bash_profile`
-- [ ] `.bashrc`
-- [ ] `.gitattributes`
-
 ## お役立ちリンク
 
 - [Usage message - Wikipedia](https://en.wikipedia.org/wiki/Usage_message)
