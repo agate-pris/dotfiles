@@ -1,26 +1,76 @@
-Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope Process
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+# 現在のユーザー情報を取得
+$identity = [Security.Principal.WindowsIdentity]::GetCurrent()
 
-winget install -e --id 7zip.7zip
-winget install -e --id Bitwarden.Bitwarden
-winget install -e --id Git.Git
-winget install -e --id GitHub.GitLFS
-winget install -e --id Google.Chrome
-winget install -e --id Google.JapaneseIME
-winget install -e --id Microsoft.VisualStudioCode
-winget install -e --id Nvidia.GeForceExperience
+# Principal に変換
+$principal = New-Object Security.Principal.WindowsPrincipal($identity)
 
-# winget install -e --id Dropbox.Dropbox
-winget install -e --id Iterate.Cyberduck
-winget install -e --id LibreOffice.LibreOffice
-winget install -e --id Microsoft.PowerToys
-winget install -e --id OBSProject.OBSStudio
+# 管理者権限を持っているか確認
+$isAdmin = $principal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+
+# 管理者権限がなければ終了
+if (-not $isAdmin) {
+    Write-Error "このスクリプトは管理者として実行してください。"
+    exit 1
+}
+
+# Set-ExecutionPolicy -ExecutionPolicy Undefined -Scope Process
+# Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+Write-Host "Visual Studio 2022 Community Edition のインストールを開始します。" -ForegroundColor Cyan
+
+$override = "--includeRecommended --wait --passive"
+$override += " --add Microsoft.VisualStudio.Workload.ManagedDesktop"
+$override += " --add Microsoft.VisualStudio.Workload.ManagedGame"
+$override += " --add Microsoft.VisualStudio.Workload.NativeDesktop"
+Write-Debug "winget install ""Microsoft.VisualStudio.2022.Community"" --silent --scope machine --override ""${override}"""
+winget install "Microsoft.VisualStudio.2022.Community" --silent --scope machine --override """${override}"""
+
+# Visual Studio のインストール確認
+if (-not (winget list --id "Microsoft.VisualStudio.2022.BuildTools") -and
+    -not (winget list --id "Microsoft.VisualStudio.2022.Community") -and
+    -not (winget list --id "Microsoft.VisualStudio.2022.Professional")) {
+    Write-Error "Visual Studio のインストールが確認できません。"
+    exit 1
+}
+
+Write-Host "ユーティリティのインストールを開始します。" -ForegroundColor Cyan
+
+# Tier 0
+$packages = @(
+    "Git.Git"
+)
+
+# Tier 1
+$packages += @(
+    "7zip.7zip",
+    "BurntSushi.ripgrep.MSVC",
+    "Microsoft.WindowsTerminal",
+    "Microsoft.PowerShell",
+    "Microsoft.VisualStudioCode",
+    "Mozilla.Firefox.ja",
+    "ajeetdsouza.zoxide"
+)
+
+# Tier 2
+# $packages += @(
+#      "Bitwarden.Bitwarden",
+#      "Valve.Steam",
+#      "VideoLAN.VLC"
+# )
+
+# Tier 3
+# $packages += @(
+#      "Microsoft.Sysinternals.ZoomIt"
+# )
+
+# winget install -e --id LibreOffice.LibreOffice
+# winget install -e --id Microsoft.PowerToys
+# winget install -e --id OBSProject.OBSStudio
 # winget intall -e --id SyncTrayzor.SyncTrayzor
-winget install -e --id Valve.Steam
-winget install -e --id voidtools.Everything
+# winget install -e --id Valve.Steam
+# winget install -e --id voidtools.Everything
 
-winget install -e --id Microsoft.VisualStudio
-winget install -e --id UnityTechnologies.UnityHub
+# winget install -e --id UnityTechnologies.UnityHub
 
 # Install Chocolatey and Boxstarter
 # wip: See https://boxstarter.org/InstallBoxstarter
