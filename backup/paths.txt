@@ -1,0 +1,19 @@
+$APPDATA\Advanced Combat Tracker\Config\Advanced Combat Tracker.config.xml
+$APPDATA\Roaming\DarkSoulsIII
+$LOCALAPPDATA\LINE\Data\Sticker
+$LOCALAPPDATA\Logitech\Logitech Gaming Software\profiles
+$LOCALAPPDATA\Microsoft\PowerToys\FancyZones\zones-settings.json
+$LOCALAPPDATA\Montaro
+$LOCALAPPDATA\VirtualStore\Program Files (x86)\AlfaSystem\shiki2
+$PROGRAMFILES(X86)\Steam\steamapps\common\Home Improvisation\homeimprov_Data\Saves
+$PROGRAMFILES(X86)\Steam\steamapps\common\Ikaruga\save
+$PROGRAMFILES(X86)\Steam\steamapps\common\Montaro RE\Montaro RE_Data\SaveData
+$PROGRAMFILES(X86)\Steam\steamapps\common\UNDER NIGHT In-Birth Exe Late[st]\Save
+$PROGRAMFILES(X86)\Steam\steamapps\common\v_katsu\UserData
+$PROGRAMFILES(X86)\Steam\userdata
+$USERPROFILE\Documents\My Games\FINAL FANTASY XIV - A Realm Reborn
+$USERPROFILE\Documents\My Games\FINAL FANTASY XIV - A Realm Reborn (Benchmark)
+$USERPROFILE\Documents\My Games\Oneshot
+$USERPROFILE\Documents\My Games\Terraria
+$USERPROFILE\Documents\SavedGames\Bleed
+$USERPROFILE\Documents\vroid\avatars
